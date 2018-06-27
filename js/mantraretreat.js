@@ -17,7 +17,7 @@ var hasPkg = function(step) {
       registration_value = radios[i].value;
       str_value = registration_value.split(':')[1];
       //document.getElementById('os0').value =
-      document.forms['registration_pkg_paypal'].elements['os0'].selectedIndex = i;
+      document.forms['registration_pkg_paypal'].elements['os0'].selectedIndex = i+1;
       console.log('value: ' + registration_value );
 
       if (step == 'register') {
