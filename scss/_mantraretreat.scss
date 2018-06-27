@@ -1,0 +1,31 @@
+// custom styles
+.text-warning, .text-danger {
+  margin: 1rem;
+}
+
+section#about {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url('../img/NV5.jpg');
+  background-position: center center;
+  @include background-cover;
+}
+
+section#services {
+  padding-top: 5rem;
+  .questions {
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 1.5em;
+    a {
+      font-size: .8em;
+      padding-left: 15px;
+    }
+  }
+}
+
+form#registration_pkg {
+  li {
+    list-style: none;
+  }
+}
