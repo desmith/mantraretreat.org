@@ -318,12 +318,16 @@ header.masthead p {
 section#about {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+section#about .first_character {
+  color: #f05f40;
 }
 
 section#services {
