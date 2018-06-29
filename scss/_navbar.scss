@@ -6,7 +6,6 @@
   @include transition-all;
   .navbar-brand {
     font-weight: 700;
-    text-transform: uppercase;
     color: $primary;
     @include sans-serif-font;
     &:focus,
@@ -20,7 +19,6 @@
       > a.nav-link:focus {
         font-size: .9rem;
         font-weight: 700;
-        text-transform: uppercase;
         color: $gray-900;
         &:hover {
           color: $primary;

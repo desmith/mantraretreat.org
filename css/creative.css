@@ -91,7 +91,6 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 700;
-  text-transform: uppercase;
   color: #F05F40;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -104,7 +103,6 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
   font-weight: 700;
-  text-transform: uppercase;
   color: #212529;
 }
 
@@ -315,7 +313,7 @@ header.masthead p {
   margin: 1rem;
 }
 
-section#about {
+section#home {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV.jpg");
@@ -326,7 +324,7 @@ section#about {
   background-size: cover;
 }
 
-section#about .first_character {
+section#home .first_character {
   color: #f05f40;
 }
 
@@ -343,6 +341,17 @@ section#services .questions {
 section#services .questions a {
   font-size: .8em;
   padding-left: 15px;
+}
+
+section#registration a.btn-registration {
+  height: 27px;
+  width: 108px;
+  line-height: 27px;
+  text-transform: none;
+  color: #000;
+  background-color: #ffc439;
+  margin: 5px 20px 25px;
+  padding: 0;
 }
 
 form#registration_pkg li {

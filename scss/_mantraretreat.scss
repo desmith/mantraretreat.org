@@ -3,7 +3,7 @@
   margin: 1rem;
 }
 
-section#about {
+section#home {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url('../img/NV.jpg');
@@ -24,6 +24,19 @@ section#services {
       font-size: .8em;
       padding-left: 15px;
     }
+  }
+}
+
+section#registration {
+  a.btn-registration {
+    height: 27px;
+    width: 108px;
+    line-height: 27px;
+    text-transform: none;
+    color: #000;
+    background-color: rgb(255, 196, 57);
+    margin: 5px 20px 25px;
+    padding: 0;
   }
 }
 
