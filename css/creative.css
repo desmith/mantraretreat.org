@@ -313,10 +313,15 @@ header.masthead p {
   margin: 1rem;
 }
 
+header {
+  background-attachment: fixed;
+}
+
 section#home {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV.jpg");
+  background-attachment: fixed;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -328,17 +333,17 @@ section#home .first_character {
   color: #f05f40;
 }
 
-section#services {
+section#about {
   padding-top: 5rem;
 }
 
-section#services .questions {
+section#about .questions {
   margin: 2rem;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-section#services .questions a {
+section#about .questions a {
   font-size: .8em;
   padding-left: 15px;
 }

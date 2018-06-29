@@ -3,10 +3,14 @@
   margin: 1rem;
 }
 
+header {
+  background-attachment: fixed;
+}
 section#home {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url('../img/NV.jpg');
+  background-attachment: fixed;
   background-position: center center;
   .first_character {
     color: rgb(240, 95, 64);
@@ -14,7 +18,7 @@ section#home {
   @include background-cover;
 }
 
-section#services {
+section#about {
   padding-top: 5rem;
   .questions {
     margin: 2rem;
@@ -26,6 +30,7 @@ section#services {
     }
   }
 }
+
 
 section#registration {
   a.btn-registration {
