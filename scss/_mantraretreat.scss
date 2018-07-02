@@ -20,6 +20,14 @@ section#home {
 
 section#about {
   padding-top: 5rem;
+  .iskcon-logo {
+    background: url(../img/ISKCONLogo-small.png) left center no-repeat;
+  }
+  .HDG {
+    font-size: .8em;
+    font-weight: bold;
+    font-style: italic;
+  }
   .questions {
     margin: 2rem;
     font-weight: bold;
