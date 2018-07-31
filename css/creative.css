@@ -359,6 +359,15 @@ header .HDG {
   font-style: italic;
 }
 
+section#activities img {
+  padding: 5px;
+}
+
+section#activities ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
 section#registration a.btn-registration {
   height: 27px;
   width: 108px;
