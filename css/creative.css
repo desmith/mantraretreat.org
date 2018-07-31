@@ -317,7 +317,7 @@ header {
   background-attachment: fixed;
 }
 
-section#home {
+section#retreat {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV.jpg");
@@ -329,22 +329,12 @@ section#home {
   background-size: cover;
 }
 
-section#home .first_character {
+section#retreat .first_character {
   color: #f05f40;
 }
 
 section#about {
   padding-top: 5rem;
-}
-
-section#about .iskcon-logo {
-  background: url(../img/ISKCONLogo-small.png) left center no-repeat;
-}
-
-section#about .HDG {
-  font-size: .8em;
-  font-weight: bold;
-  font-style: italic;
 }
 
 section#about .questions {
@@ -356,6 +346,17 @@ section#about .questions {
 section#about .questions a {
   font-size: .8em;
   padding-left: 15px;
+}
+
+header .iskcon-logo {
+  height: 101px;
+  background: url(../img/ISKCONLogo-small.png) left center no-repeat;
+}
+
+header .HDG {
+  font-size: .8em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 section#registration a.btn-registration {

@@ -6,7 +6,7 @@
 header {
   background-attachment: fixed;
 }
-section#home {
+section#retreat {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ), url('../img/NV.jpg');
@@ -20,14 +20,6 @@ section#home {
 
 section#about {
   padding-top: 5rem;
-  .iskcon-logo {
-    background: url(../img/ISKCONLogo-small.png) left center no-repeat;
-  }
-  .HDG {
-    font-size: .8em;
-    font-weight: bold;
-    font-style: italic;
-  }
   .questions {
     margin: 2rem;
     font-weight: bold;
@@ -39,6 +31,17 @@ section#about {
   }
 }
 
+header {
+  .iskcon-logo {
+    height: 101px;
+    background: url(../img/ISKCONLogo-small.png) left center no-repeat;
+  }
+  .HDG {
+    font-size: .8em;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
 
 section#registration {
   a.btn-registration {
