@@ -337,6 +337,16 @@ section#about {
   padding-top: 5rem;
 }
 
+section#about .iskcon-logo {
+  background: url(../img/ISKCONLogo-small.png) left center no-repeat;
+}
+
+section#about .HDG {
+  font-size: .8em;
+  font-weight: bold;
+  font-style: italic;
+}
+
 section#about .questions {
   margin: 2rem;
   font-weight: bold;
