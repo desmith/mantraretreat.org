@@ -348,12 +348,16 @@ section#about .questions a {
   padding-left: 15px;
 }
 
-header .iskcon-logo {
+header .logo-HDG {
+  margin-top: 75px;
+}
+
+header .logo-HDG .iskcon-logo {
   height: 101px;
   background: url(../img/ISKCONLogo-small.png) left center no-repeat;
 }
 
-header .HDG {
+header .logo-HDG .HDG {
   font-size: .8em;
   font-weight: bold;
   font-style: italic;

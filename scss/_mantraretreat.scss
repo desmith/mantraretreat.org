@@ -32,14 +32,17 @@ section#about {
 }
 
 header {
-  .iskcon-logo {
-    height: 101px;
-    background: url(../img/ISKCONLogo-small.png) left center no-repeat;
-  }
-  .HDG {
-    font-size: .8em;
-    font-weight: bold;
-    font-style: italic;
+  .logo-HDG {
+    margin-top: 75px;
+    .iskcon-logo {
+      height: 101px;
+      background: url(../img/ISKCONLogo-small.png) left center no-repeat;
+    }
+    .HDG {
+      font-size: .8em;
+      font-weight: bold;
+      font-style: italic;
+    }
   }
 }
 
