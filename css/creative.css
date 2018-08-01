@@ -358,7 +358,8 @@ header .logo-HDG .iskcon-logo {
 }
 
 header .logo-HDG .HDG {
-  font-size: .8em;
+  display: block;
+  font-size: 1em;
   font-weight: bold;
   font-style: italic;
 }
