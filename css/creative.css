@@ -51,7 +51,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .section-heading {
@@ -318,7 +318,6 @@ header {
 }
 
 section#retreat {
-  padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV.jpg");
   background-attachment: fixed;
@@ -349,7 +348,7 @@ section#about .questions a {
 }
 
 header .logo-HDG {
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 header .logo-HDG .iskcon-logo {
@@ -358,7 +357,6 @@ header .logo-HDG .iskcon-logo {
 }
 
 header .logo-HDG .HDG {
-  display: block;
   font-size: 1em;
   font-weight: bold;
   font-style: italic;
