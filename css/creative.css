@@ -385,3 +385,7 @@ section#registration a.btn-registration {
 form#registration_pkg li {
   list-style: none;
 }
+
+secton#schedule .table-bordered td {
+  margin-left: 10px;
+}
