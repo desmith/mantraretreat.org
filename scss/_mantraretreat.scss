@@ -76,8 +76,26 @@ form#registration_pkg {
   }
 }
 
-secton#schedule {
-  .table-bordered td {
-    margin-left: 10px;
+table.table-bordered {
+  th.day {
+    padding: 25px;
+    background: rgba(239, 95, 64, .65);
+    color: #fff;
+  }
+  td.slot {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background: rgba(239, 95, 64, .3);
+  }
+  td.event {
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+    background: rgba(239, 95, 64, .2);
+    p.indent {
+      position: relative;
+      left: 5%;
+    }
   }
 }
