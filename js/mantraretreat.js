@@ -3,7 +3,7 @@ var hasPkg = function(step, link) {
     var reg_link = "";
     var registration_value = "";
     if (step == 'register') {
-        reg_link = 'https://forms.gle/6JacDZZGb26msEpm8?usp=pp_url';
+        reg_link = 'https://docs.google.com/forms/d/e/1FAIpQLSfslRbnvdF-RYDXy2xO7Cqy_GgY1OpIKWM-I9CzxfNzPtse7w/viewform?usp=pp_url';
     } else if (step == 'paypal') {
         reg_link = 'https://paypal.me/ISKCONCommunications';
     }
@@ -21,7 +21,8 @@ var hasPkg = function(step, link) {
 
         if (step == 'register') {
             str_RegPkg = '$' + registration_value
-            reg_link += '&entry.371804978=' + str_RegPkg;
+            uri = '&entry.371804978=' + str_RegPkg;
+            reg_link += encodeURI(uri);
             window.open(reg_link);
         }
 
@@ -42,5 +43,5 @@ var hasPkg = function(step, link) {
         return false;
     }
 
-    return true;
+    return false;
 }
