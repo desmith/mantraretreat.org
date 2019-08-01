@@ -57,9 +57,11 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
             </li>
+            <!--
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
             </li>
+          -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#videos">Videos</a>
             </li>
@@ -226,7 +228,7 @@
     </section>
 
 
-    <!--
+
     <section id="speakers">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
@@ -284,12 +286,44 @@
                     Manorama Dasa
                   </div>
                   <div class="project-category text-faded">
-                    Youth Minister & Bus Tour Leader
+                    Youth Minister &amp; Bus Tour Leader
                   </div>
                 </div>
               </div>
             </a>
           </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/speakers/fullsize/KripaMoya Dasa.jpg">
+              <img class="img-fluid" src="img/speakers/thumbnails/KripaMoya Dasa.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Kripamoya Dasa
+                  </div>
+                  <div class="project-category text-faded">
+
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/speakers/fullsize/AmalaHarinaama Dasa.jpg">
+              <img class="img-fluid" src="img/speakers/thumbnails/AmalaHarinaama Dasa.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Amala Harinaama Dasa
+                  </div>
+                  <div class="project-category text-faded">
+
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/speakers/fullsize/Burke Rochford.jpg">
               <img class="img-fluid" src="img/speakers/thumbnails/Burke Rochford.png" alt="">
@@ -351,6 +385,7 @@
               </div>
             </a>
           </div>
+        -->
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/speakers/fullsize/Anuttama.jpg">
               <img class="img-fluid" src="img/speakers/thumbnails/Anuttama.png" alt="">
@@ -360,7 +395,7 @@
                     Anuttama Dasa
                   </div>
                   <div class="project-category text-faded">
-                    Leadership & Communications Teacher
+                    Leadership &amp; Communications Teacher
                   </div>
                 </div>
               </div>
@@ -372,13 +407,11 @@
       </div>
     </section>
 
-
     <section class="bg-dark text-white">
       <div class="container text-center">
         <a class="btn btn-light btn-xl sr-button js-scroll-trigger" href="#activities">More Info!</a>
       </div>
     </section>
-
 
     <section class="p-0" id="activities">
       <div class="container">
@@ -400,15 +433,20 @@
               <h3 class="mb-3">Event Highlights</h3>
               <p class="text-muted mb-0">
 
+
               <ul>
+
                  <li>Kirtan with Gaura Vani</li>
                  <li>Drama by Bhaktimarga Swami</li>
+              <!--
                  <li>Yoga classes with Damodara Dasa</li>
                  <li>Comedy with Yadhunath Dasa</li>
+              -->
                  <li>Hikes with the Walking Monk</li>
                  <li>Sports</li>
                  <li>Bonfires</li>
                  <li>Srila Prabhupada Stories</li>
+
               </ul>
 
               </p>
@@ -421,9 +459,11 @@
             <p class="text-muted mb-0">
 
             <ul>
+            <!--
               <li>Opening keynote: "The Role of Men in ISKCON" with Professor Burke Rochford</li>
               <li>"Being Yourself in Krishna's Service"</li>
               <li>"Navigating the Male Female Paradox"</li>
+            -->
             </ul>
 
             </p>
@@ -436,11 +476,13 @@
               <p class="text-muted mb-0 text-left">
 
               <ul>
+              <!--
                 <li>"The Ability in Man: How to Find Your Style!" with Bhuta Bhavana Dasa</li>
 
                 <li>"The Matter of Spirit: Harmonizing Worldly & Spiritual Pursuits" with Anuttama Dasa</li>
 
                 <li>"Grow Stronger Through Challenges: The Kurukshetra in Our Lives" with Partha Dasa</li>
+              -->
               </ul>
 
             </p>
@@ -467,6 +509,7 @@
       </div>
     </section>
 
+    <!--
     <section id="schedule">
       <div class="container">
         <div class="row mb-5">
@@ -663,6 +706,8 @@
 
       </div>
     </section>
+    -->
+
 
     <section class="bg-primary" id="videos">
       <div class="container">
@@ -687,7 +732,103 @@
       </div>
     </section>
 
-    -->
+
+    <section class="p-0" id="registration">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-heading text-center">
+
+             Registration Form
+
+            </h2>
+            <hr class="my-4">
+            <p class="mb-5 text-left">
+
+              <form id="registration_pkg" onChange="return hasPkg('');" onSubmit="chkForm(this);">
+
+              <b>Select Registration Package:</b>
+              <li><input type="radio" name="reg_amt" value="76:New Vrindaban resident">
+                New Vrindaban resident $76 per person includes meals*</li>
+
+              <li><input type="radio" name="reg_amt" value="76:Alachua bus discount" />
+                Alachua bus discount $76 per person includes meals (not including bus transportation fees)*</li>
+
+              <li><input type="radio" name="reg_amt" value="76:Men ages 18-21, with meals, no accommodation" />
+                Men ages 18-21 discount $76 per person includes meals (no accommodations)*</li>
+
+              <li><input type="radio" name="reg_amt" value="118:Men ages 18-21, with meals and accommodation" />
+                Men ages 18-21 discount $118 per person includes meals and 2 nights accommodation*</li>
+
+              <li><input type="radio" name="reg_amt" value="118:Men ages 22 and up, with meals, no accommodation" />
+
+                Men ages 22 and up $118 per person includes meals (no accommodations)*</li>
+              <li><input type="radio" name="reg_amt" value="180:Men ages 22 and up, with meals and accommodation" />
+               Men ages 22 and up $180 per person includes meals and 2 nights accommodation*</li>
+
+               <div class="text-right"><small> * or donation according to your means </small></div>
+              </form>
+
+            <h2 class="steps step1">Step 1:</h2>
+
+            <form id="registration_pkg_paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" onsubmit="return hasPkg('paypal');">
+
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="RJ7RWTVDEN9XE">
+            <table>
+            <tr><td><input type="hidden" name="on0" value="Pkgs">Pkgs</td></tr><tr><td><select name="os0">
+
+              <option value="">Select Option</option>
+              <option value="New Vrindaban resident">New Vrindaban resident $76.00 USD</option>
+              <option value="Alachua bus discount">Alachua bus discount $76.00 USD</option>
+              <option value="Men ages 18-21, with meals, no accommodation">Men ages 18-21, with meals, no accommodation $76.00 USD</option>
+              <option value="Men ages 18-21, with meals and accommodation">Men ages 18-21, with meals and accommodation $118.00 USD</option>
+              <option value="Men ages 22 and up, with meals, no accommodations">Men ages 22 and up, with meals, no accommodations $108.00 USD</option>
+              <option value="Men ages 22 and up, with meals and accommodation">Men ages 22 and up, with meals and accommodation $164.00 USD</option>
+            </select> </td></tr>
+            </table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+
+
+            <h2 class="steps step2">Step 2:</h2>
+
+            <a class="btn btn-registration btn-xl sr-button"
+               href="javascript:void()"
+               onclick="return hasPkg('register');"
+               target="_blank">
+               Register
+             </a>
+
+
+            <div class="text-danger">
+              Please note payment must be completed for your registration to be validated.
+            </div>
+
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>352-514-6415</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mt-5 text-center">
+            <img src="img/ISKCONSeal.png" />
+        </div>
+      </div>
+    </section>
 
     <!-- Bootstrap core JavaScript -->
     <!--

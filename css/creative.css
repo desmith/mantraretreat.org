@@ -371,6 +371,10 @@ section#activities ul li {
   padding: 5px 0;
 }
 
+section#registration h2.steps {
+  margin-top: 15px;
+}
+
 section#registration a.btn-registration {
   height: 27px;
   width: 108px;
