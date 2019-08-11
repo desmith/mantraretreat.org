@@ -43,5 +43,5 @@ var hasPkg = function(step, link) {
         return false;
     }
 
-    return false;
+    return true;
 }
