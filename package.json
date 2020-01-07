@@ -1,8 +1,7 @@
 {
     "title": "Creative",
-    "name": "startbootstrap-creative",
-    "version": "4.1.1",
-    "description": "Creative is a stylish one page HTML theme for Bootstrap.",
+    "name": "MANtraRetreat",
+    "version": "1.1.1",
     "keywords": [
         "css",
         "sass",
@@ -11,21 +10,11 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/creative",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
-    },
+
     "dependencies": {
+        "Axios": "0.18.1",
         "bootstrap": "^4.3.1",
         "browser-sync": "2.24.3",
         "font-awesome": "4.7.0",
