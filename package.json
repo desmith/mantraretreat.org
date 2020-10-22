@@ -13,7 +13,6 @@
     "license": "MIT",
     "dependencies": {
         "axios": "0.18.1",
-        "bootstrap": "^4.3.1",
         "browser-sync": "2.24.3",
         "font-awesome": "4.7.0",
         "gulp": "^4.0.2",
@@ -22,10 +21,8 @@
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^4.0.1",
         "gulp-uglify": "3.0.0",
-        "jquery": "3.4.0",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
-        "popper.js": "^1.15.0",
         "scrollreveal": "3.4.0"
     },
     "devDependencies": {}

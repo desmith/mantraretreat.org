@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var header = require('gulp-header');
+//var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
-var pkg = require('./package.json');
+//var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
 
 // Set the banner content
@@ -107,6 +107,9 @@ gulp.task('js:minify', () => {
 
 // JS
 gulp.task('js', gulp.series('js:minify'));
+
+// Build task
+gulp.task('build', gulp.series('css', 'js'));
 
 // Default task
 gulp.task('default', gulp.series('css', 'js', 'vendor'));
