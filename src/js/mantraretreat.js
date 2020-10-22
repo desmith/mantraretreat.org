@@ -3,7 +3,6 @@ import 'bootstrap';
 import 'jquery.easing';
 import 'scrollreveal';
 import 'magnific-popup';
-import '@fortawesome/fontawesome-free';
 import './creative.js';
 
 var donation_selected = false;

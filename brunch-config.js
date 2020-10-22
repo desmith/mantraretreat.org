@@ -31,6 +31,7 @@ module.exports = {
             joinTo: {
                 'css/mantraretreat.css': /^(src\/styl)/,
                 'css/creative.css': /^(src\/scss\/creative\.scss)|(src\/css\/creative\.css)/,
+                'css/vendor.css': /^(src\/css\/vendor)\//,
             },
         },
     },

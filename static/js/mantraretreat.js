@@ -238,8 +238,6 @@ require("scrollreveal");
 
 require("magnific-popup");
 
-require("@fortawesome/fontawesome-free");
-
 require("./creative.js");
 
 var donation_selected = false;
