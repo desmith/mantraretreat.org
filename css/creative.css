@@ -386,31 +386,14 @@ section#registration a.btn-registration {
   padding: 0;
 }
 
-form#registration_pkg li {
+#step1 li {
   list-style: none;
 }
 
-table.table-bordered th.day {
-  padding: 25px;
-  background: rgba(239, 95, 64, 0.65);
-  color: #fff;
+#step1 li input {
+  margin-right: 10px;
 }
 
-table.table-bordered td.slot {
-  text-align: center;
-  margin: 5px;
-  padding: 10px;
-  background: rgba(239, 95, 64, 0.3);
-}
-
-table.table-bordered td.event {
-  text-align: left;
-  margin: 5px;
-  padding: 10px;
-  background: rgba(239, 95, 64, 0.2);
-}
-
-table.table-bordered td.event p.indent {
-  position: relative;
-  left: 5%;
+#pp_button {
+  display: none;
 }

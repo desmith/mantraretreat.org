@@ -760,50 +760,69 @@
     </section>
 
     <section class="p-0" id="registration">
-    <!-- Registration Form -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mx-auto text-center">
+        <!-- Registration Form -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
 
-            <h2 class="section-heading">
-                Registration
-            </h2>
+                <h2 class="section-heading text-center">Registration</h2>
 
-            <hr class="my-4">
-            <p class="mb-5">
+                <hr class="my-4">
 
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="9SF976V9RYBNU" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
 
-            </p>
-          </div>
-        </div>
 
-        <div class="row">
-            <!--
-            <div class="col-lg-4 ml-auto text-center">
+               <div id="step1" class="">
+
+                   <h2 class="steps step1">Step 1:</h2>
+                   <form id="donation" target="_blank" action="get" onChange="return chkFrm(this, 'set')" onSubmit="return chkFrm(this, 'submit')">
+
+                    <b>Select Donation Amount:</b>
+
+                    <li><label><input type="radio" name="reg_amt" value="-1">No Donation</label></li>
+                    <li><label><input type="radio" name="reg_amt" value="11" />$11 USD</label></li>
+                    <li><label><input type="radio" name="reg_amt" value="31" />$31 USD</label></li>
+                    <li><label><input type="radio" name="reg_amt" value="51" />$51 USD</label></li>
+                    <li><label><input type="radio" name="reg_amt" value="108" />$108 USD</label></li>
+                    <li><label><input type="radio" name="reg_amt" value="" />Other:</label></li>
+
+                    <br/><input id="pp_button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    </form>
+
+                </div>
+
+               <div id="step2" class="">
+
+                   <h2 class="steps step2">Step 2:</h2>
+
+                   <a class="btn btn-registration btn-xl sr-button"
+                      href="javascript:void()"
+                      onclick="return stepTwo();"
+                      target="_blank">Register
+                   </a>
+
+               </div>
+
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 ml-auto text-center">
                 <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
                 <p>+1 (647) 774-9939 (WhatsApp Call only)</p>
+              </div>
+              <div class="col-lg-4 mr-auto text-center">
+                <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                <p>
+                  <a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>
+                </p>
+              </div>
             </div>
-            -->
-
-          <div class="col-12 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 mt-5 text-center">
-            <img src="img/ISKCONSeal.png" />
-        </div>
-
-    </section>
+            <div class="row">
+              <div class="col-lg-12 mt-5 text-center">
+                <img src="img/ISKCONSeal.png" />
+            </div>
+        <!-- /registration -->
+        </section>
 
     <!-- Bootstrap core JavaScript -->
     <!--

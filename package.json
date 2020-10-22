@@ -27,5 +27,6 @@
         "magnific-popup": "^1.1.0",
         "popper.js": "^1.15.0",
         "scrollreveal": "3.4.0"
-    }
+    },
+    "devDependencies": {}
 }
