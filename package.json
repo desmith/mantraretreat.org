@@ -12,22 +12,26 @@
     ],
     "license": "MIT",
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.1",
         "axios": "0.18.1",
-        "browser-sync": "2.24.3",
-        "debug": "^2.6.9",
-        "font-awesome": "4.7.0",
-        "gulp": "^4.0.2",
-        "gulp-clean-css": "3.9.4",
-        "gulp-header": "2.0.5",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^4.0.1",
-        "gulp-uglify": "3.0.0",
-        "http-proxy": "^1.18.1",
+        "bootstrap": "^4.5.3",
+        "jquery": "^3.5.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
-        "object-path": "^0.11.5",
-        "scrollreveal": "3.4.0",
-        "yargs-parser": "^13.1.2"
+        "popper.js": "^1.16.1",
+        "scrollreveal": "3.4.0"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "babel-brunch": "^7.0.1",
+        "brunch": "^3.0.0",
+        "eslint-brunch": "^3.12.0",
+        "javascript-brunch": "^2.10.0",
+        "sass-brunch": "^3.0.0",
+        "stylus-brunch": "^3.0.0"
+    },
+    "scripts": {
+        "build": "brunch build",
+        "prod": "brunch build --production",
+        "watch": "brunch watch"
+    }
 }

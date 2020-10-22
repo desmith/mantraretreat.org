@@ -1,0 +1,78 @@
+.text-warning,
+.text-danger {
+  margin: 1rem;
+}
+header {
+  background-attachment: fixed;
+}
+section#retreat {
+  padding-bottom: calc(10rem - 56px);
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/NV.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+}
+section#retreat .first_character {
+  color: #f05f40;
+}
+section#about {
+  padding-top: 5rem;
+}
+section#about .questions {
+  margin: 2rem;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+section#about .questions a {
+  font-size: 0.8em;
+  padding-left: 15px;
+}
+header .logo-HDG {
+  margin-top: 25px;
+}
+header .logo-HDG .iskcon-logo {
+  height: 101px;
+  background: url("../img/ISKCONLogo-small.png") left center no-repeat;
+}
+header .logo-HDG .HDG {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+section#activities img {
+  padding: 10px;
+}
+section#activities ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+section#registration h2.steps {
+  margin-top: 15px;
+}
+section#registration a.btn-registration {
+  height: 27px;
+  width: 108px;
+  line-height: 27px;
+  text-transform: none;
+  color: #000;
+  background-color: #ffc439;
+  margin: 5px 20px 25px;
+  padding: 0;
+}
+#step1 li {
+  list-style: none;
+}
+#step1 li input {
+  margin-right: 10px;
+}
+#pp_button,
+#step2,
+#pp_reg {
+  display: none;
+}
+#pp_reg {
+  font-size: 1em;
+  color: #008000;
+}
+
+
+/*# sourceMappingURL=mantraretreat.css.map*/
