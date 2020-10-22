@@ -81,6 +81,11 @@ section#registration {
   }
 }
 
-#pp_button {
+#pp_button, #step2, #pp_reg {
     display: none;
+}
+
+#pp_reg {
+    font-size: 1em;
+    color: green;
 }

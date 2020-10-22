@@ -11,16 +11,20 @@ var chkFrm = function(form, action) {
             donation_selected = true;
             donation_amount = radios[i].value;
             if (donation_amount < 0) {
+                $('#step2').show();
                 $('#pp_button').hide();
             } else {
                 pp_link += donation_amount;
                 $('#pp_button').show();
+                $('#step2').hide();
             }
         }
     }
 
     if (action == 'submit') {
         window.open(pp_link, '_blank');
+        $('#step2').show();
+        $('#pp_reg').show();
     }
     return false;
 }
