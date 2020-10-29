@@ -386,6 +386,10 @@ section#registration a.btn-registration {
   padding: 0;
 }
 
+#step1 {
+  margin: 15px;
+}
+
 #step1 li {
   list-style: none;
 }
@@ -394,11 +398,6 @@ section#registration a.btn-registration {
   margin-right: 10px;
 }
 
-#pp_button, #step2, #pp_reg {
-  display: none;
-}
-
-#pp_reg {
-  font-size: 1em;
-  color: green;
+p.step1, p.step2 {
+  font-weight: bold;
 }
