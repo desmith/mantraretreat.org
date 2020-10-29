@@ -10,21 +10,12 @@ var chkFrm = function(form, action) {
         if (radios[i].checked) {
             donation_selected = true;
             donation_amount = radios[i].value;
-            if (donation_amount < 0) {
-                $('#step2').show();
-                $('#pp_button').hide();
-            } else {
-                pp_link += donation_amount;
-                $('#pp_button').show();
-                $('#step2').hide();
-            }
+            pp_link += donation_amount;
         }
     }
 
     if (action == 'submit') {
         window.open(pp_link, '_blank');
-        $('#step2').show();
-        $('#pp_reg').show();
     }
     return false;
 }
@@ -32,13 +23,11 @@ var chkFrm = function(form, action) {
 var stepTwo = function () {
     var reg_link = 'https://docs.google.com/forms/d/e/1FAIpQLScaucbXHE-YRdjKmbgaLpfpXpzLw45wzzNpeRwco-sMe_vr6A/viewform?usp=pp_url';
     if (!donation_selected) {
-        alert("Please select a registration Package.");
+        alert("Please select a donation amount.");
     } else {
-
         var params = '&entry.371804978=$' + donation_amount + '+USD';
         reg_link += encodeURI(params);
         window.open(reg_link);
-
     }
     return false
 }
