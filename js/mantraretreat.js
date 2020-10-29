@@ -25,8 +25,8 @@ var stepTwo = function () {
     if (!donation_selected) {
         alert("Please select a donation amount.");
     } else {
-        var params = '&entry.371804978=$' + donation_amount + '+USD';
-        reg_link += encodeURI(params);
+        //var params = '&entry.371804978=$' + donation_amount + '+USD';
+        //reg_link += encodeURI(params);
         window.open(reg_link);
     }
     return false
