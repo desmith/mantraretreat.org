@@ -7,9 +7,9 @@ define("BaseURL", $_SERVER['REQUEST_SCHEME']."://".$_SERVER["HTTP_HOST"]);
 $amount = intval($_REQUEST["amount"]) * 100;
 
 // live
-\Stripe\Stripe::setApiKey('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');
+\Stripe\Stripe::setApiKey('sk_live_');
 // test
-//\Stripe\Stripe::setApiKey('sk_test_51Hi2SOKIPeeja8WuZjT9UMWYe08Db2rKSmyx5cZw0mB3v0GP4eDB5BcTTRooGZGkVXlKZpsXAsxs732dzdZBb11o00S1cqNgEJ');
+//\Stripe\Stripe::setApiKey('sk_test_');
 
 header('Content-Type: application/json');
 
