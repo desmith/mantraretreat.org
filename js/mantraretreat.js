@@ -8,7 +8,7 @@ var stepTwo = function () {
     var reg_link = 'https://docs.google.com/forms/d/e/1FAIpQLScaucbXHE-YRdjKmbgaLpfpXpzLw45wzzNpeRwco-sMe_vr6A/viewform?usp=pp_url';
 
     if (donation_amount == "0") {
-        alert("Please select a donation amount.");
+        alert("Please complete your donation prior to registering.");
     } else {
         window.open(reg_link);
     }
