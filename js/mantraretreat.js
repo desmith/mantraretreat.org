@@ -22,12 +22,8 @@ var chkFrm = function(form, action) {
 
 var stepTwo = function () {
     var reg_link = 'https://docs.google.com/forms/d/e/1FAIpQLScaucbXHE-YRdjKmbgaLpfpXpzLw45wzzNpeRwco-sMe_vr6A/viewform?usp=pp_url';
-    if (!donation_selected) {
-        alert("Please select a donation amount.");
-    } else {
         //var params = '&entry.371804978=$' + donation_amount + '+USD';
         //reg_link += encodeURI(params);
         window.open(reg_link);
-    }
     return false
 }
