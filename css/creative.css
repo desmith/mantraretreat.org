@@ -319,7 +319,7 @@ header {
 
 section#retreat {
   padding-bottom: calc(10rem - 56px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/NV.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Poster-2020.png);
   background-attachment: fixed;
   background-position: center center;
   -webkit-background-size: cover;
