@@ -57,6 +57,9 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#registration">Registration</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#survey">Survey</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -345,159 +348,180 @@
     </section>
 
     <section class="p-0" id="registration">
-        <!-- Registration Form -->
-          <div class="container">
-            <div class="row">
-              <div class="col-2"></div>
-              <div class="col-8 mx-auto">
+    <!-- Registration Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 mx-auto">
 
-                <h2 class="section-heading text-center">Registration</h2>
+            <h2 class="section-heading text-center">Registration</h2>
 
-                <hr class="my-4">
+            <hr class="my-4">
 
-                <p>
-                  We're excited to bring you the first virtual MAN-tra retreat and share with you insights from a variety of men from all across the world. Before completing your registration we are asking every man to offer a donation according to his means. Registration for MAN-tra enables you to attend all of the sessions, or any mix of sessions of your choice.
-                </p>
+            <p>
+                We're excited to bring you the first virtual MAN-tra retreat and share with you insights from a variety of men from all across the world. Before completing your registration we are asking every man to offer a donation according to his means. Registration for MAN-tra enables you to attend all of the sessions, or any mix of sessions of your choice.
+            </p>
 
-                <p>
-                    Please note your <b>PayPal Transaction ID/Confirmation Number.
-                    This will be required</b> for you to complete your registration.
-                </p>
+            <p>
+                Please note your <b>PayPal Transaction ID/Confirmation Number.
+                This will be required</b> for you to complete your registration.
+            </p>
 
-             <p>
-                 NOTE: A donation of any size is sufficient to complete the registration form. If you are unable to contribute, please contact us via email (<a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>) and we will complete the registration on your behalf. These funds will be used to cover the cost of this year's event and be seed money for future MAN-tra retreats.
-             </p>
+            <p>
+                NOTE: A donation of any size is sufficient to complete the registration form. If you are unable to contribute, please contact us via email (<a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>) and we will complete the registration on your behalf. These funds will be used to cover the cost of this year's event and be seed money for future MAN-tra retreats.
+            </p>
 
-             <p class="steps step1">Step 1: Select Donation Amount</p>
+            <p class="steps step1">Step 1: Select Donation Amount</p>
 
-              </div>
-              <div class="col-2"></div>
             </div>
+            <div class="col-2"></div>
+        </div>
 
-            <div class="row">
-                <div class="col-4 mx-auto"></div>
-                <div class="col-4 mx-auto">
+        <div class="row">
+            <div class="col-4 mx-auto"></div>
+            <div class="col-4 mx-auto">
 
-                    <div id="smart-button-container">
-                        <div style="text-align: center;">
-                          <div style="margin-bottom: 1.25rem;">
-                            <p>MAN-tra Retreat Donation</p>
-                            <select id="item-options"><option value="0">Select Amount</option><option value="$11" price="11.00">$11 - 11.00 USD</option><option value="$31" price="31.00">$31 - 31.00 USD</option><option value="$51" price="51.00">$51 - 51.00 USD</option><option value="$108" price="108.00">$108 - 108.00 USD</option><option value="$1" price="1.00">$1 - 1.00 USD</option></select>
-                          </div>
-                        <div id="paypal-button-container"></div>
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                        <div style="margin-bottom: 1.25rem;">
+                        <p>MAN-tra Retreat Donation</p>
+                        <select id="item-options"><option value="0">Select Amount</option><option value="$11" price="11.00">$11 - 11.00 USD</option><option value="$31" price="31.00">$31 - 31.00 USD</option><option value="$51" price="51.00">$51 - 51.00 USD</option><option value="$108" price="108.00">$108 - 108.00 USD</option><option value="$1" price="1.00">$1 - 1.00 USD</option></select>
                         </div>
-                      </div>
-                      <script src="https://www.paypal.com/sdk/js?client-id=ASkueW7Fj_GXd9Joc9R-8VgHFOilfPZpNDcHyGAdw1bVG3TFbq-HElbP37L58McjkODeJzoLWbNNlNpP&currency=USD" data-sdk-integration-source="button-factory"></script>
-                      <script>
-                        function initPayPalButton() {
-                          var shipping = 0;
-                          var itemOptions = document.querySelector("#smart-button-container #item-options");
-                          var orderDescription = 'MAN-tra Retreat Donation';
-                      paypal.Buttons({
-                        style: {
-                          shape: 'pill',
-                          color: 'gold',
-                          layout: 'vertical',
-                          label: 'paypal',
-                        },
-                        createOrder: function(data, actions) {
-                          var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
-                          var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
-                          var tax = (0 === 0) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
-                          quantity = 1;
-                          tax *= quantity;
-                          tax = Math.round(tax * 100) / 100;
-                          var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
-                          priceTotal = Math.round(priceTotal * 100) / 100;
-                          var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
-
-                          return actions.order.create({
-                            purchase_units: [{
-                              description: orderDescription,
-                              amount: {
-                                currency_code: 'USD',
-                                value: priceTotal,
-                                breakdown: {
-                                  item_total: {
-                                    currency_code: 'USD',
-                                    value: itemTotalValue,
-                                  },
-                                  shipping: {
-                                    currency_code: 'USD',
-                                    value: shipping,
-                                  },
-                                  tax_total: {
-                                    currency_code: 'USD',
-                                    value: tax,
-                                  }
-                                }
-                              },
-                              items: [{
-                                name: selectedItemDescription,
-                                unit_amount: {
-                                  currency_code: 'USD',
-                                  value: selectedItemPrice,
-                                },
-                                quantity: quantity
-                              }]
-                            }]
-                          });
-                        },
-                        onApprove: function(data, actions) {
-                          return actions.order.capture().then(function(details) {
-                            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                          });
-                        },
-                        onError: function(err) {
-                          console.log(err);
-                        },
-                      }).render('#paypal-button-container');
-                    }
-                    initPayPalButton();
-                      </script>
-
-                </div>
-                <div class="col-4 mx-auto"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 mx-auto">
-
-                    <div id="step2" class="">
-
-                        <p class="steps step2">Step 2: After noting down your PayPal Confirmation number, click below to complete registration.</p>
-
-                       <a class="btn btn-registration btn-xl sr-button"
-                          href="javascript:void()"
-                          onclick="return stepTwo();"
-                          target="_blank">Register
-                        </a>
-
+                    <div id="paypal-button-container"></div>
                     </div>
+                    </div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=ASkueW7Fj_GXd9Joc9R-8VgHFOilfPZpNDcHyGAdw1bVG3TFbq-HElbP37L58McjkODeJzoLWbNNlNpP&currency=USD" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                    function initPayPalButton() {
+                        var shipping = 0;
+                        var itemOptions = document.querySelector("#smart-button-container #item-options");
+                        var orderDescription = 'MAN-tra Retreat Donation';
+                    paypal.Buttons({
+                    style: {
+                        shape: 'pill',
+                        color: 'gold',
+                        layout: 'vertical',
+                        label: 'paypal',
+                    },
+                    createOrder: function(data, actions) {
+                        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+                        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+                        var tax = (0 === 0) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+                        quantity = 1;
+                        tax *= quantity;
+                        tax = Math.round(tax * 100) / 100;
+                        var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+                        priceTotal = Math.round(priceTotal * 100) / 100;
+                        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+
+                        return actions.order.create({
+                        purchase_units: [{
+                            description: orderDescription,
+                            amount: {
+                            currency_code: 'USD',
+                            value: priceTotal,
+                            breakdown: {
+                                item_total: {
+                                currency_code: 'USD',
+                                value: itemTotalValue,
+                                },
+                                shipping: {
+                                currency_code: 'USD',
+                                value: shipping,
+                                },
+                                tax_total: {
+                                currency_code: 'USD',
+                                value: tax,
+                                }
+                            }
+                            },
+                            items: [{
+                            name: selectedItemDescription,
+                            unit_amount: {
+                                currency_code: 'USD',
+                                value: selectedItemPrice,
+                            },
+                            quantity: quantity
+                            }]
+                        }]
+                        });
+                    },
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                        });
+                    },
+                    onError: function(err) {
+                        console.log(err);
+                    },
+                    }).render('#paypal-button-container');
+                }
+                initPayPalButton();
+                    </script>
+
+            </div>
+            <div class="col-4 mx-auto"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 mx-auto">
+
+                <div id="step2" class="">
+
+                    <p class="steps step2">Step 2: After noting down your PayPal Confirmation number, click below to complete registration.</p>
+
+                    <a class="btn btn-registration btn-xl sr-button"
+                        href="javascript:void()"
+                        onclick="return stepTwo();"
+                        target="_blank">Register
+                    </a>
 
                 </div>
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>+1 (647) 774-9939 (WhatsApp Call only)</p>
+            </div>
+            <div class="col-6 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+                <a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>
+            </p>
+        </div>
+    </div>
+    <!-- /registration -->
+    </section>
+
+    <section class="p-0" id="survey">
+        <!-- Survey Form -->
+        <div class="container">
+            <div class="row">
                 <div class="col-2"></div>
+                <div class="col-12 mx-auto">
+
+                    <h2 class="section-heading text-center">Survey</h2>
+
+                    <hr class="my-4">
+
+                    <!--<p align="center"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc6ht-0zmj_xr_XvGGM6rPsVI6v6sZPMDrAiP9DpzBfFhAfsQ/viewform?usp=sf_link">Link to Survey</a></p>-->
+
+                    <div align="center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc6ht-0zmj_xr_XvGGM6rPsVI6v6sZPMDrAiP9DpzBfFhAfsQ/viewform?embedded=true" width="640" height="6149" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+                </div>
             </div>
-            <div class="row">
-              <div class="col-6 ml-auto text-center">
-                <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-                <p>+1 (647) 774-9939 (WhatsApp Call only)</p>
-              </div>
-              <div class="col-6 mr-auto text-center">
-                <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-                <p>
-                  <a href="mailto:mantraretreat@iskcon.org">mantraretreat@iskcon.org</a>
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 mt-5 text-center">
-                <img src="img/ISKCONSeal.png" />
-              </div>
-            </div>
-        <!-- /registration -->
-        </section>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-12 mt-5 text-center">
+            <img src="img/ISKCONSeal.png" />
+        </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
