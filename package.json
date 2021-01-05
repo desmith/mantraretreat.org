@@ -12,7 +12,7 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "axios": "0.18.1",
+        "axios": "0.21.1",
         "browser-sync": "2.24.3",
         "debug": "^2.6.9",
         "font-awesome": "4.7.0",
